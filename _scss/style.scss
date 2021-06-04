@@ -5,3 +5,17 @@
   box-sizing: border-box;
 }
 
+// Variables
+:root {
+  --clr-bg-main: white;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: cornflowerblue;
+  background: white;
+}
+
+::selection {
+  color: cornflowerblue;
+  background: white;
+}
