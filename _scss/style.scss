@@ -7,7 +7,7 @@
 
 // Variables
 :root {
-  --clr-bg-main: white;
+  --clr-bg-main: #ECEBDA;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -18,4 +18,30 @@
 ::selection {
   color: cornflowerblue;
   background: white;
+}
+
+body {
+  background: var(--clr-bg-main);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 12%;
+    border-left: 1px solid rgba(0,0,0,0.2);
+    height: 100vh;
+    top: 0;
+  }
+}
+
+.container {
+  margin-left: -50%;
+}
+
+.title {
+  
 }
