@@ -1,3 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+:root {
+  --clr-bg-main: white;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: cornflowerblue;
+  background: white;
+}
+
+::selection {
+  color: cornflowerblue;
+  background: white;
+}
 
 /*# sourceMappingURL=style.css.map */
