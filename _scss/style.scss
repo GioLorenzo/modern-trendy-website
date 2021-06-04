@@ -39,9 +39,54 @@ body {
 }
 
 .container {
-  margin-left: -50%;
+  margin-left: -30%;
 }
 
 .title {
-  
+  font-family: 'Six Caps', sans-serif;
+  font-size: 10rem;
+  line-height: 10.5rem;
+  pointer-events: none;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 5px;
+    background: black;
+    left: -15%;
+    top: 15%;
+  }
+
+  .title-2,
+  .title-3 {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+p {
+  font-family: 'playfair display sc', serif;
+  font-size: 1.6rem;
+  margin-top: 2em;
+}
+
+.waterbg {
+  position: absolute;
+  width: 30%;
+  height: 100vh;
+  z-index: -1;
+  background-color: #DCDBC9;
+  right: 0;
+}
+
+.img {
+  position: absolute;
+  width: 16em;
+  height: 27em;
+  top: 30%;
+  left: 30%;
+  z-index: 1;
+  background-color: pink;
 }

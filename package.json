@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "sass --watch _scss/style.scss:css/style.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.129.0"
+  }
 }
