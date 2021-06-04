@@ -77,7 +77,10 @@ p {
   width: 30%;
   height: 100vh;
   z-index: -1;
-  background-color: #DCDBC9;
+  background: url(../assets/branches.jpg);
+  background-size: cover;
+  mix-blend-mode: luminosity;
+  opacity: 0.5;
   right: 0;
 }
 
@@ -85,8 +88,8 @@ p {
   position: absolute;
   width: 16em;
   height: 27em;
-  top: 30%;
-  left: 30%;
+  top: 28%;
+  left: 26.5%;
   z-index: 1;
-  background-color: pink;
+  
 }
