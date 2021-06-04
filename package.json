@@ -1,0 +1,12 @@
+{
+  "name": "modern-website-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch _scss/style.scss:css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
