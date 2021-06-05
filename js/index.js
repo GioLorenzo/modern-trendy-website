@@ -16,7 +16,9 @@ let cursor = {
 }
 
 document.addEventListener('mousemove', (e) => {
-  cursor.x = -e.clientX * 0.1;
-  cursor.y = -e.clientY * 0.1;
+  cursor.x = -e.clientX * 0.03;
+  cursor.y = -e.clientY * 0.03;
+
+  img.style.transform = `translate(${cursor.x}px, ${cursor.y}px)`;
 })
         
