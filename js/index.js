@@ -8,7 +8,10 @@ var myAnimation = new hoverEffect({
 
 
 
-
+let cursor = {
+  x: 0,
+  y: 0
+}
 
 
         
