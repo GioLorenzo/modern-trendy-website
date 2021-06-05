@@ -13,5 +13,8 @@ let cursor = {
   y: 0
 }
 
-
+document.addEventListener('mousemove', (e) => {
+  cursor.x = -e.clientX * 0.1;
+  cursor.y = -e.clientY * 0.1;
+})
         
