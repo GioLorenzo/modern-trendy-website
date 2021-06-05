@@ -59,7 +59,7 @@ body:before {
 .title .title-2,
 .title .title-3 {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 p {
@@ -72,11 +72,10 @@ p {
   position: absolute;
   width: 30%;
   height: 100vh;
-  z-index: -1;
+  z-index: 2;
   background: url(../assets/dark.jpg);
   background-size: cover;
   background-position: left;
-  mix-blend-mode: luminosity;
   opacity: 0.8;
   right: 0;
 }
@@ -87,7 +86,7 @@ p {
   height: 27em;
   top: 28%;
   left: 30%;
-  z-index: 1;
+  z-index: 2;
   background: url(../assets/dye1.jpg);
   background-position: center;
   background-size: cover;
@@ -95,14 +94,12 @@ p {
   overflow: hidden;
 }
 
-.cursor {
-  position: absolute;
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  margin-left: -1.5rem;
-  margin-top: -1.5rem;
+.letter {
+  display: inline-block;
+  line-height: 1em;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transform: translateY(-50px);
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

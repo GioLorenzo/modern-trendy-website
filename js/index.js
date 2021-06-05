@@ -1,3 +1,18 @@
+let textWrapper = document.querySelector('.title-1');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+let textWrapper2 = document.querySelector('.title-2');
+textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+let textWrapper3 = document.querySelector('.title-3');
+textWrapper3.innerHTML = textWrapper3.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+let tl = gsap.timeline();
+
+window.addEventListener('load', () => {
+  tl.to('.title-1 .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', stagger: '0.03' });
+  tl.to('.title-2 .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', stagger: '0.03' }, "-=.7");
+  tl.to('.title-3 .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', stagger: '0.03' }, "-=.7");
+});
+
 var myAnimation = new hoverEffect({
             parent: document.querySelector('.img'),
             intensity: 0.4,
@@ -13,12 +28,12 @@ let cursorCircle = document.querySelector('.cursor');
 let cursor = {
   x: 0,
   y: 0
-}
+};
 
 document.addEventListener('mousemove', (e) => {
   cursor.x = -e.clientX * 0.03;
   cursor.y = -e.clientY * 0.03;
 
   img.style.transform = `translate(${cursor.x}px, ${cursor.y}px)`;
-})
+});
         
