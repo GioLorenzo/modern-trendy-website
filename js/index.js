@@ -6,7 +6,9 @@ var myAnimation = new hoverEffect({
             displacementImage: './assets/dis.png'
 });
 
-
+let title = document.querySelector('.container');
+let img = document.querySelector('.img');
+let cursorCircle = document.querySelector('.cursor');
 
 let cursor = {
   x: 0,
