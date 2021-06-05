@@ -93,10 +93,10 @@ p {
   left: 30%;
   z-index: 2;
   background: url(../assets/dye1.jpg);
-  background-position: center;
   background-size: cover;
   border-radius: 5px;
   overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 
 .letter {

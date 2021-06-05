@@ -9,8 +9,10 @@ let tl = gsap.timeline();
 
 window.addEventListener('load', () => {
   tl.to('.title-1 .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', stagger: '0.03' });
-  tl.to('.title-2 .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', stagger: '0.03' }, "-=.7");
-  tl.to('.title-3 .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', stagger: '0.03' }, "-=.7");
+  tl.to('.title-2 .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', stagger: '0.03' }, "-=0.7");
+  tl.to('.title-3 .letter', { opacity: 1, y: '0', clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', stagger: '0.03' }, "-=0.7");
+  tl.from('p', { opacity: 0, y: '-50px' }, "-=0.1");
+  tl.to('.img', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%', ease: Back.easeOut.config(1.5), duration: 2}, "-=0.7")
 });
 
 var myAnimation = new hoverEffect({
