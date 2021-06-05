@@ -79,9 +79,9 @@ p {
   z-index: -1;
   background: url(../assets/dark.jpg);
   background-size: cover;
-  background-position:center;
-  mix-blend-mode:darken;
-  opacity: 0.1;
+  background-position: left;
+  mix-blend-mode: luminosity;
+  opacity: 0.8;
   right: 0;
 }
 
@@ -92,5 +92,7 @@ p {
   top: 28%;
   left: 30%;
   z-index: 1;
-  
+  background: url(../assets/dye1.jpg);
+  background-position: center;
+  background-size: cover;
 }
