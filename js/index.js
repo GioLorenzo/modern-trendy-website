@@ -17,7 +17,7 @@ window.addEventListener('load', () => {
 
 var myAnimation = new hoverEffect({
             parent: document.querySelector('.img'),
-            intensity: 0.4,
+            intensity: 0.3,
             image1: './assets/dye1.jpg',
             image2: './assets/dye2.jpg',
             displacementImage: './assets/dis.png'
@@ -33,8 +33,8 @@ let cursor = {
 };
 
 document.addEventListener('mousemove', (e) => {
-  cursor.x = -e.clientX * 0.03;
-  cursor.y = -e.clientY * 0.03;
+  cursor.x = -e.clientX * 0.04;
+  cursor.y = -e.clientY * 0.07;
 
   img.style.transform = `translate(${cursor.x}px, ${cursor.y}px)`;
 });
